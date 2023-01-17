@@ -1,0 +1,34 @@
+.KakaoPay-Result-Container{
+
+
+    width:310px;
+    height: 100px;
+}
+
+
+
+.KakaoPay-Result-btn{
+
+    position:relative;
+    
+    width:300px;
+    height: 50px;
+    border-radius: 25px;
+
+    top:20px;
+    border:none;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: var(--navy);
+    COLOR:WHITE;
+    font-size: 25px;
+    font-family: 'MaplestoryOTFBold';
+
+
+}
+
+.KakaoPay-Result-btn:active{
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+    position: relative;
+    top:22px;
+}

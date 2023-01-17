@@ -1,0 +1,329 @@
+.SignUp-Container {
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+}
+
+.Terms-Container {
+    display: grid;
+    gap: 20px;
+    /* margin: 0 auto; */
+    width: 700px;
+    height: 800px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: scroll;
+    align-items: center;
+    justify-items: stretch;
+    overflow: hidden;
+    font-size: small;
+}
+
+.Terms-title{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.Terms-title > input {
+    scale: 1.3;
+}
+
+.Terms-content{
+    width: 100%;
+    height: 100px;
+    overflow-y: auto;
+    background-color: #f7f7f7;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.4;
+    word-spacing: 1px;
+    word-break: keep-all;
+    padding: 10px 15px;
+    -ms-overflow-style: none;
+}
+.Terms-content::-webkit-scrollbar {
+    display: none;
+}
+
+.SignUp-Allagree{
+    display: flex;
+    flex-direction: column;
+}
+.All-Term {
+    border-bottom: 1px solid;
+}
+.SignUp-Allagree > label > p {
+    font-size: 0.9rem;
+}
+.SignUp-Allagree > label > b {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.SignUp-Allagree-S {
+    font-style: italic;
+}
+
+.Terms-agree-btn{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.agreeBtn{
+    width:214px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #003366;
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: 1rem;
+    text-indent: 1rem;
+    cursor: pointer;
+}
+
+.nonAgreeBtn{
+    width:214px;
+    height: 50px;
+    border:none;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 20px;
+    background-color: grey;
+    color: whitesmoke;
+    letter-spacing: 1rem;
+    text-indent: 1rem;
+    cursor: pointer;
+}
+
+.SignUp-Main-Box{
+    width: 70%;
+    height: 85%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+/* 
+-------- 회원가입 
+*/
+.SignUp-Box {
+    display: grid;
+    grid-template-rows: 1.8fr 4fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 700px;
+    height: 800px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+.SignUp-Box h1 {
+    font-size: 2.5rem;
+    padding: 10px;
+}
+.SignUp-Box h4 {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: rgb(160, 160, 160);
+}
+
+.SignUp-header {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.SignUp-header img {
+    width: 10%;
+}
+
+
+.SignUp-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.SignUp-Table {
+    grid-row: 2/3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 0 18%;
+}
+.SignUp-Table::-webkit-scrollbar {
+    width: 10px;
+}
+.SignUp-Table::-webkit-scrollbar-thumb {
+background: linear-gradient(#000e88, #303030);
+border-radius: 25px;
+}
+
+.SignUp-item > th {
+    text-align: right;
+}
+
+.SignUp-item > td > input {
+    border-radius: 25px;
+    height: 50px;
+    width: 310px;
+    font-size: 0.9rem;
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 20px;
+    border: 0px;
+    outline: none;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+}
+
+.SignUp-item > td > select {
+    border-radius: 25px;
+    height: 50px;
+    width: 155px;
+    margin-right: 10px;
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 20px;
+    outline: none;
+    border: 0px;
+}
+
+.Span-Age {
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.Gender {
+    display: inline-flex;
+}
+
+.gender {
+    width: 150px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.gender-checkbox {
+    scale: 1.5;
+    margin: 0 15px;
+}
+
+.Message {
+    position: relative;
+    color: red;
+    font-size: 12px;
+    text-align: right;    
+    margin-top: 2px;
+}
+
+.Message2 {
+    position: relative;
+    color: green;
+    font-size: 12px;
+    text-align: right;    
+    margin-top: 2px;
+}
+
+.Chacked-btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(0, 11, 59);
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0px;
+    outline: none;
+    color: var(--white);
+    letter-spacing: 3px;
+    text-indent: 3px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.SignUp-footer {
+    grid-row: 3/4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignUp-btn {
+    width: 64%;
+    height: 60px;
+    border-radius: 25px;
+    background-color:  rgb(0, 11, 59);
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0px;
+    outline: none;
+    color: var(--white);
+    letter-spacing: 10px;
+    font-size: 1.3rem;
+    vertical-align: middle;
+    font-family: 'MaplestoryOTFBold';
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) {
+    /* 약관 동의 */
+    .Terms-Container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    .SignUp-Main-Box{
+        width: 85%;
+        height: 80%;
+    }
+    .SignUp-Allagree > label > p {
+        font-size: 0.75rem;
+    }
+    .SignUp-Allagree > label > b {
+        font-size: 0.7rem;
+    }
+    .Terms-title > input {
+        scale: 1;
+    }
+    .SignUp-Allagree-S {
+        font-style: italic;
+        font-size: 0.6rem;
+    }
+    .Terms-content  {
+        font-size: 0.6rem;
+    }
+    .SignUp-Box {
+        grid-template-rows: 1.3fr 4fr 1fr;
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .SignUp-Table {
+        padding: 0 8%;
+    }
+    .SignUp-item > td > input {
+        font-size: 0.7rem;
+    }
+    .Chacked-btn {
+        width: 80px;
+        font-size: 0.7rem;
+    }
+    .SignUp-item > td > select {
+        width:105px;
+    }
+    .SignUp-btn {
+        width: 84%;
+    }
+}

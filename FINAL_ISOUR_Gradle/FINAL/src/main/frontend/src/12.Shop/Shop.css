@@ -1,0 +1,78 @@
+
+
+
+.Shop-Container{
+    background-color: rgb(28,34,47);
+    width:500px;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.Shop-CoinShopWord img{
+    width:80px;
+    right:10px;
+    position: relative;
+    top:20px;
+}
+.Shop-CoinShopWord{
+    font-size: 60px;
+    color:gold;
+    text-align: center;
+    
+}
+
+.Shop-CoinPrice{
+
+    margin : 20px auto;
+    font-size: 25px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+}
+
+.Shop-priceHeader{
+    border-top: 1px solid white;
+    color:gold;
+}
+
+.Shop-priceBody{
+    border-bottom: 1px solid white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Shop-priceBody img{
+    width:100px;
+}
+.Shop-priceFooter{
+    color:white;
+    border: 1px solid white;
+    background-color :rgba(248, 241, 241, 0.2);
+}
+
+.Shop-priceFooter span{
+    text-decoration: line-through 7px red;
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 454px) {
+    .Shop-CoinShopWord img{
+        width:60px;
+        right:10px;
+        position: relative;
+        top:15px;
+    }
+    .Shop-CoinShopWord{
+        font-size: 40px;
+        color:gold;
+        text-align: center;
+        
+    }
+}
+
+
+
+
+

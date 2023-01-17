@@ -1,0 +1,654 @@
+/*^^^^^^^ 엠비티아이 검사 OX 페이지 ^^^^^^^^*/
+
+.MBTI-QuizContainer {
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.MBTI-QuizContainer p {
+
+    position: relative;
+    font-size: 30px;
+    font-family: 'MaplestoryOTFBold';
+    top: 250px;
+
+}
+
+.MBTI-NumContainer {
+
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    bottom: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.MBTI-Num {
+
+    color: white;
+    position: relative;
+    font-size: 0.8em;
+    border-radius: 30px;
+    background: #003366;
+    border: 0;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+.MBTI-OXContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1180px;
+    position: relative;
+    z-index: 1;
+}
+
+.MBTI-ObuttonContainer {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px none;
+    box-shadow: 0 4px 4px -4px gray;
+    margin: 0 auto;
+}
+
+.MBTI-wordBox {
+
+    position: relative;
+}
+
+.MBTI-Word1 {
+    position: relative;
+    font-size: 25px;
+    width: 100px;
+    height: 20px;
+    color: skyblue;
+    font-family: 'MaplestoryOTFBold';
+    right: 190px;
+
+
+}
+
+.MBTI-Word2 {
+    position: relative;
+    font-size: 25px;
+    width: 100px;
+    height: 20px;
+    color: orangered;
+    font-family: 'MaplestoryOTFBold';
+    left: 190px;
+
+}
+
+.MBTI-O3 {
+    display: flex;
+    width: 110px;
+    height: 110px;
+    border: 2px solid black;
+    border-radius: 100%;
+    border-color: skyblue;
+    cursor: pointer;
+}
+
+.MBTI-O3:hover {
+    background-color: aqua;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(-20px);
+}
+
+.MBTI-O3:active {
+    background-color: aqua;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(0px);
+}
+
+.MBTI-O2 {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 100%;
+    border-color: skyblue;
+    position: relative;
+    top: 19px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.MBTI-O2:hover {
+    background-color: aqua;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(-20px);
+}
+
+.MBTI-O2:active {
+    background-color: aqua;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(0px);
+}
+
+.MBTI-O1 {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 100%;
+    border-color: skyblue;
+    position: relative;
+    top: 36px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.MBTI-O1:hover {
+    background-color: aqua;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(-20px);
+}
+
+.MBTI-O1:active {
+    background-color: aqua;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(0px);
+}
+
+.MBTI-X3 {
+    display: flex;
+    width: 110px;
+    height: 110px;
+    border: 2px solid black;
+    border-radius: 100%;
+    border-color: orangered;
+    position: relative;
+    cursor: pointer;
+}
+
+.MBTI-X3:hover {
+    background-color: #FF0099;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(-20px);
+}
+
+.MBTI-X3:active {
+    background-color: #FF0099;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(0px);
+}
+
+.MBTI-X2 {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 100%;
+    border-color: orangered;
+    position: relative;
+    top: 19px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.MBTI-X2:hover {
+    background-color: #FF0099;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(-20px);
+}
+
+.MBTI-X2:active {
+    background-color: #FF0099;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(0px);
+}
+
+.MBTI-X1 {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 100%;
+    border-color: orangered;
+    position: relative;
+    top: 36px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.MBTI-X1:hover {
+    background-color: #FF0099;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(-20px);
+}
+
+.MBTI-X1:active {
+    background-color: #FF0099;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(0px);
+}
+
+
+
+
+@media screen and (max-width: 1180px) {
+
+    .MBTI-QuizContainer {
+
+        width: 100%
+    }
+
+    .MBTI-QuizContainer p {}
+
+    .MBTI-NumContainer {
+        width: 100%
+    }
+
+    .MBTI-Num {}
+
+    .MBTI-OXContainer {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .MBTI-ObuttonContainer {}
+
+    .MBTI-O3 {}
+
+    .MBTI-O3:hover {}
+
+    .MBTI-O3:active {}
+
+    .MBTI-O2 {}
+
+    .MBTI-O2:hover {}
+
+    .MBTI-O2:active {}
+
+    .MBTI-O1 {}
+
+    .MBTI-O1:hover {}
+
+    .MBTI-O1:active {}
+
+    .MBTI-X3 {}
+
+    .MBTI-X3:hover {}
+
+    .MBTI-X3:active {}
+
+    .MBTI-X2 {}
+
+    .MBTI-X2:hover {}
+
+    .MBTI-X2:active {}
+
+    .MBTI-X1 {}
+
+    .MBTI-X1:hover {}
+
+    .MBTI-X1:active {}
+
+    .MBTI-wordBox {
+
+        position: relative;
+    }
+
+    .MBTI-Word1 {}
+
+    .MBTI-Word2 {}
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .MBTI-QuizContainer {
+
+        width: 100%
+    }
+
+    .MBTI-QuizContainer p {}
+
+    .MBTI-NumContainer {
+        width: 100%
+    }
+
+    .MBTI-Num {}
+
+    .MBTI-OXContainer {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .MBTI-ObuttonContainer {}
+
+    .MBTI-O3 {}
+
+    .MBTI-O3:hover {}
+
+    .MBTI-O3:active {}
+
+    .MBTI-O2 {}
+
+    .MBTI-O2:hover {}
+
+    .MBTI-O2:active {}
+
+    .MBTI-O1 {}
+
+    .MBTI-O1:hover {}
+
+    .MBTI-O1:active {}
+
+    .MBTI-X3 {}
+
+    .MBTI-X3:hover {}
+
+    .MBTI-X3:active {}
+
+    .MBTI-X2 {}
+
+    .MBTI-X2:hover {}
+
+    .MBTI-X2:active {}
+
+    .MBTI-X1 {}
+
+    .MBTI-X1:hover {}
+
+    .MBTI-X1:active {}
+
+    .MBTI-Word1 {}
+
+    .MBTI-Word2 {}
+
+
+
+}
+
+@media screen and (max-width: 660px) {
+
+    .MBTI-QuizContainer {
+
+        width: 100%;
+        position: relative;
+        bottom: 40px;
+        height: 50px;
+    }
+
+    .MBTI-QuizContainer p {
+        font-size: 25px;
+
+    }
+
+    .MBTI-NumContainer {
+        width: 100%;
+        position: relative;
+    }
+
+    .MBTI-Num {}
+
+    .MBTI-OXContainer {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .MBTI-ObuttonContainer {
+        position: relative;
+        top: 30px;
+    }
+
+    .MBTI-O3 {
+        width: 80px;
+        height: 80px;
+        position: inherit;
+    }
+
+    .MBTI-O3:hover {}
+
+    .MBTI-O3:active {}
+
+    .MBTI-O2 {
+        width: 60px;
+        height: 60px;
+        border: 2px solid black;
+        border-radius: 100%;
+        border-color: skyblue;
+        position: relative;
+        top: 12.5px;
+        margin: 0 5px;
+    }
+
+    .MBTI-O2:hover {}
+
+    .MBTI-O2:active {}
+
+    .MBTI-O1 {
+        position: relative;
+        top: 20px;
+        margin-right: 2.5px;
+
+    }
+
+    .MBTI-O1:hover {}
+
+    .MBTI-O1:active {}
+
+    .MBTI-X3 {
+        width: 80px;
+        height: 80px;
+        position: inherit;
+
+    }
+
+    .MBTI-X3:hover {}
+
+    .MBTI-X3:active {}
+
+    .MBTI-X2 {
+        width: 60px;
+        height: 60px;
+        top: 12.5px;
+        margin: 0 5px;
+
+    }
+
+    .MBTI-X2:hover {}
+
+    .MBTI-X2:active {}
+
+    .MBTI-X1 {
+        position: relative;
+        top: 20px;
+        margin-left: 2.5px;
+    }
+
+    .MBTI-X1:hover {}
+
+    .MBTI-X1:active {}
+
+    .MBTI-Word1 {
+        position: relative;
+        font-size: 22px;
+        right: 130px;
+    }
+
+    .MBTI-Word2 {
+        position: relative;
+        font-size: 22px;
+        left: 135px;
+
+    }
+
+    .MBTI-wordBox {
+        position: relative;
+        top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .MBTI-QuizContainer {
+
+        width: 100%;
+        position: relative;
+        bottom: 40px;
+        height: 50px;
+    }
+
+    .MBTI-QuizContainer p {
+        font-size: 14px;
+
+    }
+
+    .MBTI-NumContainer {
+        width: 100%;
+        position: relative;
+        bottom:80px;
+    }
+
+    .MBTI-Num {
+        position: relative;
+    }
+
+    .MBTI-OXContainer {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .MBTI-ObuttonContainer {
+        position: relative;
+        top: 30px;
+    }
+
+    .MBTI-O3 {
+        width: 70px;
+        height: 70px;
+        position: inherit;
+        top:2px;
+    }
+
+    .MBTI-O3:hover {}
+
+    .MBTI-O3:active {}
+
+    .MBTI-O2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border-color: skyblue;
+        position: relative;
+        top: 12.5px;
+        margin: 0 5px;
+        top:12px;
+
+    }
+
+    .MBTI-O2:hover {}
+
+    .MBTI-O2:active {}
+
+    .MBTI-O1 {
+        position: relative;
+        top: 20px;
+        margin-right: 2.5px;
+        width: 30px;
+        height: 30px;
+        top:22px;
+
+    }
+
+    .MBTI-O1:hover {}
+
+    .MBTI-O1:active {}
+
+    .MBTI-X3 {
+        width: 70px;
+        height: 70px;
+        position: inherit;
+        top:2px;
+
+    }
+
+    .MBTI-X3:hover {}
+
+    .MBTI-X3:active {}
+
+    .MBTI-X2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        position: relative;
+        top: 12.5px;
+        margin: 0 5px;
+        top:12px;
+
+    }
+
+    .MBTI-X2:hover {}
+
+    .MBTI-X2:active {}
+
+    .MBTI-X1 {
+        position: relative;
+        top: 20px;
+        margin-right: 2.5px;
+        width: 30px;
+        height: 30px;
+        top:22px;
+    }
+
+    .MBTI-X1:hover {}
+
+    .MBTI-X1:active {}
+
+    .MBTI-Word1 {
+        position: relative;
+        font-size: 22px;
+        right: 105px;
+    }
+
+    .MBTI-Word2 {
+        position: relative;
+        font-size: 22px;
+        left: 110px;
+
+    }
+
+    .MBTI-wordBox {
+        position: relative;
+        top: 30px;
+    }
+
+}

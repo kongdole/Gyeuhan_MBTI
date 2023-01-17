@@ -1,0 +1,384 @@
+.Postbox-Container {
+  width: 800px;
+  height: 800px;
+
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  /* background-color: purple; */
+  justify-items: center;
+  align-items: center;
+}
+
+.Postbox-table tr, th, td {
+  box-shadow: none;
+}
+.Postbox-table input[type="checkbox"] {
+  display: flex;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  padding: .5rem;
+}
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  header 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Postbox-header {
+  margin: 1rem auto 2rem;
+  text-align: center;
+}
+
+#Post-Delete {
+  margin-bottom: 1rem;
+  align-content: center;
+  border: none;
+  letter-spacing: .2rem;
+  transition: background .5s;
+
+  background-color: var(--tongue);
+  color: var(--white);
+  outline: none;
+  width: 80px;
+  font-size: 1rem;
+  padding: .5rem;
+  border-radius: 25px;
+  /* font-family: 'LINESeedKR-Bd'; */
+  font-family: 'MaplestoryOTFBold';
+}
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  main 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Postbox-main {
+  height: 450px;
+  margin-bottom: 4rem;
+}
+
+
+.Postbox-table {
+  text-align: center;
+  box-shadow: 12px 12px 12px rgba(32,32,32,.5);
+  /* border: 1px solid skyblue; */
+  border-collapse: collapse;
+
+  /* height: 500px; */
+  /* background-color: gray; */
+  /* border-collapse: collapse; */
+  /* border-radius: 12px 12px 0 0; */
+  /* overflow: hidden; */
+  /* border-spacing: 0; */
+}
+
+.Postbox-table tr {
+  border: 1px solid skyblue;
+}
+.Group-tbody {
+  display: flex;
+  border: none;
+}
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  main 영역 - thead
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Postbox-table thead tr  {
+  background-color: var(--navy);
+  color: var(--white);
+}
+.Postbox-table thead tr th {
+  /* padding: .75rem; */
+  padding: 0.5rem 1rem; 
+  /* border: 1px solid skyblue; */
+  /* border-collapse: collapse; */
+  letter-spacing: 3px;
+  box-shadow: none
+}
+
+.Postbox-table .thead-checkbox { 
+  width: 49px; 
+  padding: .5rem;
+  box-shadow: none;
+}
+.Postbox-table .thead-postSender { 
+  width: 132px; 
+  /* border: none; */
+}
+.Postbox-table .thead-content { 
+  width: 398px; 
+  /* border: none; */
+}
+.Postbox-table .thead-postTime { 
+  width: 152px; 
+  /* border: none; */
+}
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  main 영역 - tbody
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Postbox-table tbody td {
+  /* padding: 위아래 좌우 */
+  /* padding: 10px 12px; */
+  padding: 0.5rem 1rem; 
+  /* padding: .75rem;  */
+  /* border: 1px solid skyblue; */
+  border-collapse: collapse;
+  /* border: none; */
+  background-color: white;
+}
+
+.Postbox-table .tbody-checkbox { box-shadow: none; }
+.Postbox-table .tbody-postSender { width: 132px; }
+.Postbox-table .tbody-content { width: 398px; }
+.Postbox-table .tbody-postTime { 
+  width: 152px; 
+  box-shadow: none;
+}
+
+
+
+.Postbox-table .tbody-postSender {
+  border: none;
+  border-collapse: collapse;
+  box-shadow: none;
+}
+.Postbox-table .tbody-content {
+  width: 398px;
+  text-align: left;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-shadow: none;
+  /* border-collapse: collapse; */
+}
+
+#postTime-mobile {
+  display: none;
+}
+/* .Postbox-table.tbody-content-div {
+  width: 362px;
+  text-align: left;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-shadow: none;
+} */
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  footer 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Postbox-footer {
+  height: 60px;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px auto;
+}
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  페이지네이션
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Postbox-Pagination {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: var(--navy);
+  border-radius: 50px;
+  color: white;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* height: 30px; */
+  padding: 8px;
+  font-family: 'MaplestoryOTFBold';
+}
+
+.Postbox-Pagination .move {
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+.Postbox-Pagination .before:hover {
+  border-radius: 25px 5px 5px 25px;
+}
+.Postbox-Pagination .next:hover {
+  border-radius: 5px 25px 25px 5px;
+}
+
+.Postbox-Pagination .before:hover,
+.Postbox-Pagination .next:hover,
+.Postbox-Pagination li:hover {
+  background: #fff;
+  color: var(--navy);
+}
+.Postbox-Pagination .move .selected_page {
+  background: var(--navy);
+  color: yellow;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.Postbox-Pagination li {
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  border-radius: 50%;
+  color: white;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 15px;
+}
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  반응형
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media (max-width: 840px) {
+  .Postbox-Container {
+    width: 90vw;
+    /* height: calc(100vh - 70px); */
+    /* margin-top: 2rem; */
+  }
+
+  .Postbox-header h1{
+    font-size: 1.8rem;
+  }
+
+  #Post-Delete {
+    width: 50px;
+    font-size: .8rem;
+  }
+
+  /* main 영역 */
+  .Postbox-main {
+    margin-bottom: 3rem;
+  }
+  .Postbox-table {
+    width: 100%;
+    text-align: center;
+    /* box-shadow: 12px 12px 12px rgba(32,32,32,.5); */
+    box-shadow: none;
+    /* border: 1px solid skyblue; */
+    border-collapse: collapse;
+    font-size: 1rem;
+  }
+
+
+  /* main 영역 - thead */
+  .Postbox-table thead {
+    display: none;
+  }
+
+  /* main 영역 - tbody */
+  #No-post {
+    padding: .5rem 1rem;
+  }
+
+  .Postbox-table tbody td {
+    padding: 0;
+    border: none;
+  }
+
+  .Group-tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: .2rem;
+    background-color: var(--white);
+  }
+
+  .Postbox-table .tbody-checkbox { 
+    width: 30px; 
+    padding: .5rem;
+  }
+  .Postbox-table .tbody-postSender { 
+    width: 100%; 
+    text-align: left;
+    border: none;
+    font-size: .8rem;
+  }
+  .Postbox-table .tbody-content { 
+    width: 50vw; 
+    max-width: 398px;
+    border: none;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-shadow: none;
+  }
+  .Postbox-table .tbody-postTime { 
+    width: 60px;
+    padding-right: .5rem;
+  } 
+  #postTime-web {
+    display: none;
+  }
+  #postTime-mobile {
+    display: block;
+  }
+
+  /* footer 영역 */
+  .Postbox-footer {
+    height: 60px;
+    display: flex;
+    position: sticky;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px auto;
+  }
+
+  /* 
+  .Postbox-table tbody td {
+    padding: 0;
+    box-shadow: none;
+  }
+  .Postbox-table .thead-checkbox { 
+    width: 49px; 
+    padding: .5rem;
+  }
+  .Postbox-table.tbody-postSender,
+  .Postbox-table.tbody-content,
+  .Postbox-table.tbody-content-div {
+    border: none;
+  }
+  .Postbox-table.tbody-postSender {
+    text-align: left;
+  }
+  .Postbox-table .thead-postTime { width: 10%; }
+  .Postbox-table.tbody-content-div {
+    width: 100%;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-shadow: none;
+  } */
+}

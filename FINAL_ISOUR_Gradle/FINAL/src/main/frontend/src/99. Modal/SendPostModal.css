@@ -1,0 +1,162 @@
+.SendPostModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: 'LINESeedKR-Bd'
+}
+.SendPostModal button {
+  outline: none;
+  cursor: pointer;
+  border: 0;
+}
+.SendPostModal > section {
+  /* width: 90%; */
+  width: 480px;
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: var(--white); 
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-show 0.3s;
+  overflow: hidden;
+}
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  header 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.SendPostModal > section > header {
+  position: relative;
+  padding: 1.2rem 4rem 1rem 2rem; 
+  background-color: var(--yellow);
+  /* 아래부터는 조혜경이 추가 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: 'MaplestoryOTFBold';
+  letter-spacing: 3px;
+}
+.SendPostModal > section > header button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #999;
+  background-color: transparent;
+}
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  main 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.SendPostModal > section > main {
+  /* padding: 16px;
+  border-bottom: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6; */
+  /* 아래부터는 조혜경이 추가 */
+  position: relative;
+  flex: 1 1 auto;
+}
+
+
+
+
+.SendPostModal-Form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 2rem 1rem;
+  font-family: 'MaplestoryOTFBold';
+  letter-spacing: 3px;
+}
+.SendPostModal-Form-control {
+  display: block;
+  border-radius: 0.5rem;
+  border: 1px solid #bfbfbf;
+  padding: .75rem;
+  margin-top: .5rem;
+  font-family: 'LINESeedKR-Bd';
+  font-size: 1rem;
+}
+
+.SendPostModal-Form-item textarea {
+  /* width: 100%; */
+  height: 4.5rem;
+  padding: .75rem 1.2rem .75rem .75rem;
+  /* padding: .75rem; */
+  outline: none;
+  resize: none;
+  border-radius: .5rem;
+  border-color: #bfbfbf;
+  max-height: 300px;
+  font-family: 'LINESeedKR-Bd'
+}
+.SendPostModal-Form-item textarea:is(:focus :valid) {
+  border-width: 2px;
+  padding: 14px;
+  border-color: #4671ea;
+}
+.SendPostModal-Form-item textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  footer 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.SendPostModal > section > footer {
+  padding: .5rem 2rem 1rem;
+  text-align: right;
+}
+.SendPostModal > section > footer button {
+  background-color: var(--navy);
+  color: var(--white);
+  outline: none;
+  width: 100px;
+  font-size: 1rem;
+  padding: .5rem;
+  border-radius: 25px;
+  font-family: 'MaplestoryOTFBold';
+  letter-spacing: 3px;
+}
+
+/* openSendPostModal */
+.SendPostModal.openSendPostModal {
+  display: flex;
+  align-items: center;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show 0.3s;
+}
+@keyframes modal-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

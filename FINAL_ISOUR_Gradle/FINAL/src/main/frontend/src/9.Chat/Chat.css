@@ -1,0 +1,369 @@
+
+.chat_container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  overflow: hidden;
+  width: 900px;
+  height: 700px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(255, 255, 255, 0.788);
+}
+
+/* Register */
+.btn {
+  padding: 10px;
+  border-radius: 25px;
+  outline: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+  font-size: 16px;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* 
+채팅 목록
+*/
+.users_container {
+  margin: 10px 0;
+  border-right: 2px solid rgb(156, 156, 156);
+  overflow-x: hidden;
+}
+.users_container::-webkit-scrollbar {
+  width: 12px;
+}
+.users_container::-webkit-scrollbar-thumb {
+  background: linear-gradient(#000e88, #303030);
+  border-radius: 25px;
+}
+.user_wrapper {
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.user_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.user_detail {
+  display: flex;
+  align-items: center;
+}
+.user_detail h4 {
+  margin-left: 10px;
+}
+/* 
+유저 프로필 사진
+*/
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/* 
+유저 상태 표시
+*/
+.user_status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.online {
+  background: #34eb52;
+}
+.offline {
+  background: red;
+}
+/* 
+선택한 채팅방 배경색 변경
+*/
+.selected_user {
+  background: wheat;
+}
+/* 
+채팅목록 하단 마지막 문자 보여주기 인듯,,
+*/
+.truncate {
+  font-size: 14px;
+  white-space: nowrap;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate strong {
+  margin-right: 10px;
+}
+/* 
+어디에 보여주는 new 인지,,
+*/
+.unread {
+  margin-left: 10px;
+  background: var(--color-3);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 10px;
+}
+.sm_screen {
+  display: none;
+}
+
+/* 
+메세지 창
+*/
+.messages_container {
+  padding: 10px;
+  position: relative;
+  overflow-x: hidden;
+  position: relative;
+  display: grid;
+  grid-template-rows: 3fr 0.4fr;
+  align-items: end;
+}
+
+.messages_container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.messages_container::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--navy), #303030);
+  border-radius: 25px;
+}
+
+.messages-box {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.message-send {
+  position: sticky;
+  bottom: 0.5rem; 
+}
+.no_conv {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+/* 
+Enter message
+*/
+.message_form {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  position: static;
+  bottom: 1rem;
+}
+.message_form input {
+  width: 400px;
+  height: 35px;
+  padding-left: 20px;
+  border-radius: 15px;
+  border: 0px;
+  box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  outline: none;
+  margin-right: 1rem;
+}
+
+/* 
+채팅 말풍선
+*/
+.message_wrapper {
+  /* margin-top: 5px; */
+  padding: 0px 5px;
+  list-style: none;
+  margin: 0.2rem;
+}
+.message_wrapper img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* 
+내가 보낸 채팅
+*/
+.me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.me > .message {
+  background: rgb(0, 37, 80);
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  word-break:break-all; 
+  color: white;
+  max-width: 70%;
+}
+
+.me > .message-time {
+  float: right;
+  position: relative;
+  font-size: .8rem;
+  margin-right: .5rem;
+  margin-top: .1rem;
+  color: gray;
+}
+
+/* 
+친구가 보낸 채팅
+*/
+.friend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.friend > .message {
+  background: rgb(255, 238, 0);
+  padding: 0.6rem;
+  border-radius: 25px;
+  max-width: 70%;
+}
+
+.friend > .message-time {
+  float: left;
+  position: relative;
+  font-size: .8rem;
+  margin-left: .5rem;
+  margin-top: .1rem;
+  color: gray;
+}
+.chat_title{
+  display: none;
+  font-family: 'MaplestoryOTFBold';
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: var(--pink);
+}
+
+/* @media screen and (max-width: 767px) {
+  .chat_container {
+    grid-template-columns: 1fr 3fr;
+  }
+  .message_form {
+    left: 3%;
+    right: 0;
+    bottom: 5px;
+  }
+  .message_wrapper p {
+    max-width: 75%;
+  }
+} */
+
+@media screen and (max-width: 576px) {
+  .user_detail h4 {
+    margin-left: 0px;
+    width: 60px;
+  }
+  
+  .user_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+ 
+  .chat_container {
+    width: 576px;
+    height: 100%;
+    border-radius: 0px;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0px;
+    display: inline-flex;
+    justify-content: flex-start;
+  }
+  .message-send {
+    position: flex;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 0.5rem; 
+  }
+  .chat_container > h3 {
+    display: none;
+  }
+  .messages-box {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+  }
+  .user_detail {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    
+  }
+  .user_status{
+    display: none;
+  }
+  .users_container {
+    /* display: none; */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 0px;
+    margin: 0;
+  }
+  .messages_container {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    grid-template-rows: 3fr 0.3fr;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .user_detail h4{
+    display: grid;
+  }
+/* selected_user */
+.chat_title{
+  display: block;
+}
+
+  .sm_container {
+    display: none;
+  }
+  .user_wrapper {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 0 15px;
+  }
+  .sm_screen {
+    display: inline-block;
+  }
+  .selected_user {
+
+  }
+
+  .message_form {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: static;
+  }
+
+  .message_form input {
+    width: 70%;
+  }
+  /* .message_form .btn {
+      margin: 0px 200px 300px;
+  }
+
+  .message_wrapper p {
+    max-width: 100%;
+  } */
+}

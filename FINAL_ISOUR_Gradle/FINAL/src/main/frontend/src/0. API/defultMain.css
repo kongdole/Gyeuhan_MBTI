@@ -1,0 +1,122 @@
+:root {
+    /* color */
+    --navy: #29335c;
+    --red: red; 
+    --white: white;
+    --pink: #ffc0cb;
+    --tongue: #e24b4b;
+    
+    --pink1: #ff7473;
+    --navy2: #34314c;
+    --blue: #4ab9e0;
+    --yellow: #ffc953;
+}
+
+/* 
+기본 설정 사이즈
+*/
+/* 
+각페이지-Box {
+    width: 700px;
+    height: 800px;
+}
+input {
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+}
+select { 
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+}
+오류 Message {
+    color: var(--red);
+    font-size: 12px;
+}
+button {
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--navy);
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+    color: var(--white);
+}
+
+*/
+/* 메이플스토리체 */
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* 라인체 */
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 나눔고딕 */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'MaplestoryOTFBold';
+}
+
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.Container {
+    width: 1180px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.04);
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'LINESeedKR-Bd'
+    
+}
+
+.No-Nav-Container {
+    width: 100vw;
+    margin: auto;
+    height: calc(100vh - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'LINESeedKR-Bd'
+}
+
+/* .Middle-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+@media (max-width: 500px) {
+    .Container {
+        width: 100%;
+    }
+
+    .No-Nav-Container {
+        height: 100vh;
+    }
+}

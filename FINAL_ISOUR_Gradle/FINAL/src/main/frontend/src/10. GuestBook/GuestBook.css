@@ -1,0 +1,233 @@
+.Container-a{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.04);
+  height: calc(100vh - 70px);
+  font-family: 'LINESeedKR-Bd';
+  width: 1180px;
+}
+.GuestBook-Container {
+  width: 700px;
+  height: 95%;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  header 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.GuestBook-header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.GuestBook-input {
+  width: 20rem;
+  border-radius: 25px;
+  border: .5px solid gray;
+  padding: .5rem;
+  font-size: 1rem;
+  margin-right: 4rem;
+}
+
+.GuestBook-submit {
+  background-color: var(--navy);
+  color: var(--white);
+  outline: none;
+  width: 80px;
+  font-size: 1rem;
+  padding: .5rem;
+  border-radius: 25px;
+  border: 1px solid var(--navy);
+}
+
+.GuestBook-submit:hover {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.GuestBook-submit:active{
+  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
+}
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Main 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.GuestBook-main {
+  width: 100%;
+
+  font-size: 1rem;
+  overflow-y: auto;
+}
+
+.GuestBook-list {
+  display: flex;
+  word-break:break-all;  
+  white-space: normal;
+  border-bottom: 1px solid lightblue;
+  padding: .5rem;
+  align-items: flex-start;
+}
+
+.Guest-face {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  margin-right: .5rem;
+}
+
+.Guest-nickname {
+  margin-top: 10px;
+  width: 7rem;
+  text-align: left;
+}
+.Guest-content {
+  width: 55%;
+  margin: 0 1.5rem;
+  text-align: left;
+  word-break:break-all; 
+  white-space: normal;
+  margin-top: 10px;
+}
+
+.Guest-chatTime {
+  margin-top: 10px;
+}
+
+.GuestBook-main::-webkit-scrollbar {
+  width: 12px;
+}
+.GuestBook-main::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(41,51,92,1) 35%, rgba(0,212,255,1) 100%);
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  .Container-a{
+    width: 100%
+
+  }
+  .GuestBook-Container {
+    grid-template-columns: 2fr 3fr;
+    width: 107%;
+    height: 600px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 0px;
+    border: 0 0 0 0;
+    box-shadow: 0 0px 0px 0 rgba(255, 255, 255, 0.2), 0 0px 0px 0 rgba(255, 255, 255, 0.19);
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .Container-a{
+    width:100%;
+  }
+  .GuestBook-Container {
+    grid-template-columns: 2fr 3fr;
+    height: 95%;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .Guest-face {
+    width: 3rem;
+    height: 2rem;
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-right: .5rem;
+  }
+  .GuestBook-input {
+    width: 14rem;
+    border-radius: 25px;
+    border: .5px solid gray;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  .GuestBook-submit {
+    width: 70px;
+    font-size: 1rem;
+
+  }
+  .GuestBook-main {
+    width: 100%;
+    height: 100%;
+    font-size: 0.75rem;
+    
+  }
+  .Guest-chatTime {
+    margin-top: 10px;
+    width: 5rem;
+  }
+  .Guest-content {
+    width: 55%;
+    margin: 0rem;
+    text-align: left;
+    word-break:break-all; 
+    white-space: normal;
+    margin-top: 10px;
+  }
+  
+
+}
+
+@media screen and (max-width: 300px) {
+  .Container-a{
+    width: 500px
+  }
+  .GuestBook-Container > .Container {
+    grid-template-columns: 2fr 3fr;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .GuestBook-header {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+
+  .GuestBook-input {
+    width: 10rem;
+    border-radius: 25px;
+    border: .5px solid gray;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+  .GuestBook-submit {
+    width: 50px;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .GuestBook-main {
+    width: 100%;
+    height: 100%;
+    font-size: 10rem;
+    
+  }
+  .Guest-chatTime {
+    margin-top: 10px;
+    width: 1rem;
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57bf9ae7.css",
+    "main.js": "/static/js/main.0bc137c0.js",
+    "static/js/915.7fc99038.chunk.js": "/static/js/915.7fc99038.chunk.js",
+    "static/media/아이셔용.png": "/static/media/아이셔용.dfe60f07928cc8aaf1e8.png",
+    "static/media/조혜경.png": "/static/media/조혜경.9f23d178276aff9edf45.png",
+    "static/media/전규한.png": "/static/media/전규한.54f4b5a0b20d66a41920.png",
+    "static/media/이동균.png": "/static/media/이동균.6bbe4a6a8afbd91aba03.png",
+    "static/media/우혜정.png": "/static/media/우혜정.9705f69d8c07ca8eb92b.png",
+    "static/media/이민형.png": "/static/media/이민형.238bc1ff25675d21a4c8.png",
+    "static/media/Coin2.png": "/static/media/Coin2.a98064b0daaa3d22964a.png",
+    "static/media/person.png": "/static/media/person.26cc981957db12ae5677.png",
+    "static/media/Coin4.png": "/static/media/Coin4.d7e582fcea80f9a0e887.png",
+    "static/media/logo.png": "/static/media/logo.db1b0b0d4d781aed2d5a.png",
+    "static/media/Coin5.png": "/static/media/Coin5.30f17c5b6bc005e6c818.png",
+    "static/media/연예인.png": "/static/media/연예인.c2151d8d13b5bee8673c.png",
+    "static/media/모험가.png": "/static/media/모험가.699370237b3fc2e55eba.png",
+    "static/media/집정관.png": "/static/media/집정관.7e78c3d2236afe442e9b.png",
+    "static/media/사업가.png": "/static/media/사업가.fee51b1497e589554a48.png",
+    "static/media/Coin3.png": "/static/media/Coin3.f7ca1fad722f406e4134.png",
+    "static/media/통솔자.png": "/static/media/통솔자.f8364669fdff3c57897d.png",
+    "static/media/장인.png": "/static/media/장인.e81f8d8a31dd1bf7ebfd.png",
+    "static/media/옹호자.png": "/static/media/옹호자.09058dd7d260ffbc5797.png",
+    "static/media/활동가.png": "/static/media/활동가.0f86ab7b0749908e030e.png",
+    "static/media/중재자.png": "/static/media/중재자.1033e5b9eaa63f29165c.png",
+    "static/media/논리술사.png": "/static/media/논리술사.646c930c8f67670c7d23.png",
+    "index.html": "/index.html",
+    "main.57bf9ae7.css.map": "/static/css/main.57bf9ae7.css.map",
+    "main.0bc137c0.js.map": "/static/js/main.0bc137c0.js.map",
+    "915.7fc99038.chunk.js.map": "/static/js/915.7fc99038.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57bf9ae7.css",
+    "static/js/main.0bc137c0.js"
+  ]
+}

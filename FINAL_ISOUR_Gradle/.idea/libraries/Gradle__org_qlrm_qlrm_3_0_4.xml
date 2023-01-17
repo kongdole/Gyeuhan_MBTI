@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.qlrm:qlrm:3.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.qlrm/qlrm/3.0.4/7b3272917aab2bc4ac3dca09c1ab55bccb285eb3/qlrm-3.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.qlrm/qlrm/3.0.4/9160134ec517e3e632ea58b7801f6a58204ac3e2/qlrm-3.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

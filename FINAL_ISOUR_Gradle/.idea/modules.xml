@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FINAL.iml" filepath="$PROJECT_DIR$/.idea/modules/FINAL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FINAL.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FINAL.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FINAL.test.iml" filepath="$PROJECT_DIR$/.idea/modules/FINAL.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Final_ISOUR_Gradle.iml" filepath="$PROJECT_DIR$/.idea/Final_ISOUR_Gradle.iml" />
+    </modules>
+  </component>
+</project>

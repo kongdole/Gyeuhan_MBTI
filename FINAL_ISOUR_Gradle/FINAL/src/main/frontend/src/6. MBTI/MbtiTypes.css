@@ -1,0 +1,547 @@
+.MBTITYPES-Container{
+    width: 1180px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.04);
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'LINESeedKR-Bd'
+    
+}
+
+.MBTITYPES-MbtiInfoBox2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    list-style: none;
+    position: relative;
+    bottom: 45px;
+}
+
+.MBTITYPES-MbtiInfoBox2 img {
+    width: 125px;
+    height: 125px;
+    position: relative;
+
+}
+
+.MBTITYPES-MbtiInfoBox2 h2 {
+
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+.MBTITYPES-MbtiInfoBox2 li {
+    position: relative;
+    top: 60px;
+}
+
+.MBTITYPES-MbtiInfoBox2 li:nth-of-type(1) {
+    background-color: rgba(149, 98, 123, 0.7);
+}
+
+.MBTITYPES-MbtiInfoBox2 li:nth-of-type(2) {
+    background-color: rgba(153, 194, 108, 0.7);
+}
+
+.MBTITYPES-MbtiInfoBox2 li:nth-of-type(3) {
+    background-color: rgba(113, 202, 204, 0.7);
+}
+
+.MBTITYPES-MbtiInfoBox2 li:nth-of-type(4) {
+    background-color: rgba(228, 199, 40, 0.7);
+}
+
+
+.MBTITYPES-title-box1{
+    font-size: 1.9rem;
+}
+
+
+
+
+.MBTITYPES-MbtiInfoHead {
+
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'MaplestoryOTFBold';
+
+
+}
+
+.MBTITYPES-MbtiInfoHead span:nth-of-type(1) {
+    color: rgba(149, 98, 123);
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+.MBTITYPES-MbtiInfoHead span:nth-of-type(2) {
+    color: rgba(153, 194, 108);
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+.MBTITYPES-MbtiInfoHead span:nth-of-type(3) {
+    color: rgba(113, 202, 204);
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+.MBTITYPES-MbtiInfoHead span:nth-of-type(4) {
+    color: rgba(228, 199, 40);
+    font-family: 'MaplestoryOTFBold';
+}
+
+
+.MBTITYPES-MbtiInfoHead div {
+    position: relative;
+    font-size: 16px;
+    top: 10px;
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+
+
+.MBTITYPES-MbtiTypeBox {
+
+    margin: 0 10px;
+
+}
+
+
+
+
+
+
+
+.MBTITYPES-MbtiInfoBox1 {
+
+    position: relative;
+
+}
+
+.MBTITYPES-MbtiInfoBox1 div {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'MaplestoryOTFBold';
+    font-size:1.1rem;
+}
+
+.MBTITYPES-MbtiInfoBox1 a {
+    text-decoration: none;
+
+}
+@media (max-width: 1180px) {
+    .Container {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .MBTITYPES-Container{
+        width: 1180px;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.04);
+        height: calc(100vh - 70px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'LINESeedKR-Bd'
+       
+        
+    }
+
+
+    .MBTITYPES-MbtiInfoBox2 {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        list-style: none;
+        position:relative;
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 img {
+        width: 120px;
+        height: 120px;
+        position: relative;
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 h2 {
+    
+        text-align: center;
+        color: whitesmoke;
+    
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li {
+        position: relative;
+        top: 60px;
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(1) {
+        background-color: rgba(149, 98, 123, 0.7);
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(2) {
+        background-color: rgba(153, 194, 108, 0.7);
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(3) {
+        background-color: rgba(113, 202, 204, 0.7);
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(4) {
+        background-color: rgba(228, 199, 40, 0.7);
+    }
+    
+    
+    .MBTITYPES-title-box1{
+        font-size: 1.7rem;
+    }
+    
+    
+    
+    
+    .MBTITYPES-MbtiInfoHead {
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'MaplestoryOTFBold';
+    
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(1) {
+        color: rgba(149, 98, 123);
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(2) {
+        color: rgba(153, 194, 108);
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(3) {
+        color: rgba(113, 202, 204);
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(4) {
+        color: rgba(228, 199, 40);
+        font-family: 'MaplestoryOTFBold';
+    }
+    
+    
+    .MBTITYPES-MbtiInfoHead div {
+        position: relative;
+        font-size: 16px;
+        top: 10px;
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    
+    
+    .MBTITYPES-MbtiTypeBox {
+    
+        margin: 0 10px;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    .MBTITYPES-MbtiInfoBox1 {
+    
+        position: relative;
+    
+    }
+    
+    .MBTITYPES-MbtiInfoBox1 div {
+        position: relative;
+        color: white;
+        text-align: center;
+        margin-bottom: 5px;
+        font-family: 'MaplestoryOTFBold';
+        font-size:1rem;
+    }
+    
+    .MBTITYPES-MbtiInfoBox1 a {
+        text-decoration: none;
+    
+    }
+    
+}
+
+@media screen and (max-width: 630px) {
+    .MBTITYPES-MbtiInfoBox2 {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        list-style: none;
+        position:relative;
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 h2 {
+    
+        text-align: center;
+        color: whitesmoke;
+    
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li {
+        position: relative;
+        top: 60px;
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(1) {
+        background-color: rgba(149, 98, 123, 0.7);
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(2) {
+        background-color: rgba(153, 194, 108, 0.7);
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(3) {
+        background-color: rgba(113, 202, 204, 0.7);
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(4) {
+        background-color: rgba(228, 199, 40, 0.7);
+    }
+    
+    
+    .MBTITYPES-title-box1{
+        font-size: 1.6rem;
+    }
+    
+    
+    
+    
+    .MBTITYPES-MbtiInfoHead {
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'MaplestoryOTFBold';
+    
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(1) {
+        color: rgba(149, 98, 123);
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(2) {
+        color: rgba(153, 194, 108);
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(3) {
+        color: rgba(113, 202, 204);
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(4) {
+        color: rgba(228, 199, 40);
+        font-family: 'MaplestoryOTFBold';
+    }
+    
+    
+    .MBTITYPES-MbtiInfoHead div {
+        position: relative;
+        font-size: 16px;
+        top: 10px;
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    
+    
+    .MBTITYPES-MbtiTypeBox {
+    
+        margin: 0 10px;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    .MBTITYPES-MbtiInfoBox1 {
+    
+        position: relative;
+    
+    }
+    
+    .MBTITYPES-MbtiInfoBox1 div {
+        position: relative;
+        color: white;
+        text-align: center;
+        margin-bottom: 5px;
+        font-family: 'MaplestoryOTFBold';
+        font-size:0.9rem;
+    }
+    
+    .MBTITYPES-MbtiInfoBox1 a {
+        text-decoration: none;
+    
+    }
+    
+}
+@media screen and (max-width: 510px) {
+    .MBTITYPES-MbtiInfoBox2 {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        list-style: none;
+        position:relative;
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 img {
+        width: 70px;
+        height: 70px;
+        position: relative;
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 h2 {
+    
+        text-align: center;
+        color: whitesmoke;
+    
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li {
+        position: relative;
+        top: 60px;
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(1) {
+        background-color: rgba(149, 98, 123, 0.7);
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(2) {
+        background-color: rgba(153, 194, 108, 0.7);
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(3) {
+        background-color: rgba(113, 202, 204, 0.7);
+    }
+    
+    .MBTITYPES-MbtiInfoBox2 li:nth-of-type(4) {
+        background-color: rgba(228, 199, 40, 0.7);
+    }
+    
+    
+    .MBTITYPES-title-box1{
+        font-size: 1.2rem;
+    }
+    
+    
+    
+    
+    .MBTITYPES-MbtiInfoHead {
+        font-size: 2.3rem;
+        text-align: center;
+        font-family: 'MaplestoryOTFBold';
+    
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(1) {
+        color: rgba(149, 98, 123);
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(2) {
+        color: rgba(153, 194, 108);
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(3) {
+        color: rgba(113, 202, 204);
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    .MBTITYPES-MbtiInfoHead span:nth-of-type(4) {
+        color: rgba(228, 199, 40);
+        font-family: 'MaplestoryOTFBold';
+    }
+    
+    
+    .MBTITYPES-MbtiInfoHead div {
+        position: relative;
+        font-size: 0.9rem;
+        top: 10px;
+        font-family: 'MaplestoryOTFBold';
+    
+    }
+    
+    
+    
+    .MBTITYPES-MbtiTypeBox {
+    
+        margin: 0 10px;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    .MBTITYPES-MbtiInfoBox1 {
+    
+        position: relative;
+    
+    }
+    
+    .MBTITYPES-MbtiInfoBox1 div {
+        position: relative;
+        color: white;
+        text-align: center;
+        margin-bottom: 5px;
+        font-family: 'MaplestoryOTFBold';
+        font-size:0.6rem;
+    }
+    
+    .MBTITYPES-MbtiInfoBox1 a {
+        text-decoration: none;
+    
+    }
+    
+}

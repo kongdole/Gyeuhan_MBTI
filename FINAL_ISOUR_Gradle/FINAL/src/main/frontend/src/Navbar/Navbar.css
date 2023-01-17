@@ -1,0 +1,498 @@
+/* 
+* (top, bottom), (left, right)
+* top, (right, left), bottom
+* top, right, bottom, left
+* ▶ positon ◀
+* relative 요소 자기 자신을 기준으로 배치
+* absolute 부모(조상) 요소를 기준으로 배치
+* fixed    뷰포트 기준으로 배치
+* stickey	 스크롤 영역 기준으로 배치
+
+
+
+
+*/
+
+
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Navbar-Container 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.Navbar-Container {
+  width: 100vw;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'MaplestoryOTFBold';
+  letter-spacing: 3px;
+  z-index: 1000;
+}
+
+.Navbar-Container li {
+  list-style: none;
+}
+
+.Navbar-Container a {
+  text-decoration: none;
+}
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  header 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Navbar-Container header {
+  width: 100%;
+  height: inherit;
+
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  transition: all .50s ease;
+}
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  logo 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Navbar-Container header .logo {
+  display: flex;
+  align-items: center;
+  margin: auto 1.5rem;
+  margin-right: 5rem;
+}
+
+.Navbar-Container header .logo img {
+  width: 35px;
+  margin-right: .5rem;
+}
+
+.Navbar-Container header .logo span {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Navbar 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Navbar-Container .Navbar {
+  width: calc(100vw - 200px);
+  margin-right: 1.5rem;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Nav-Coin {
+  color: gold;
+  margin-right: 80px;
+  width: 40px;
+
+}
+
+.HowManyCoin {
+  font-size: 20px;
+  color: gold;
+  position: relative;
+  right: 80px;
+  font-weight: 900;
+  width: 70px
+}
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Navbar 영역 - User
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.User {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+#User-icon {
+  color: var(--pink);
+  font-size: 50px;
+}
+
+.User:hover {
+  cursor: pointer;
+}
+
+.User-submenu {
+  width: 150px;
+  height: 18vh;
+  min-height: 180px;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+
+  position: absolute;
+  top: 70px;
+  right: 1rem;
+
+  background: var(--tongue);
+  border-radius: 0 0 60% 60%;
+  transition: .5s;
+}
+
+.User-submenu-close {
+  display: none;
+}
+
+.User-submenu li {
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  transition: all .50s ease;
+}
+
+.User-submenu li a {
+  color: var(--white);
+}
+
+.User-submenu :last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+  border-bottom: none;
+}
+
+#logout {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1rem;
+  transition-duration: 0.3s;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Navbar 영역 - Menu
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Menu-submenu {
+  display: flex;
+}
+
+.Menu-submenu li {
+  width: 130px;
+  padding: .5rem 1rem;
+
+  border-right: 1px solid rgba(255, 255, 255, .2);
+  transition: 0.5s;
+  /* background-color: brown; */
+  /* position: relative; */
+}
+
+.Menu-submenu li a {
+  color: var(--white);
+  transition: all .50s ease;
+}
+
+.Menu-submenu li:hover {
+  background: var(--white);
+}
+
+.Menu-submenu li:hover a {
+  color: var(--tongue);
+}
+
+.Menu-submenu li:nth-child(5) {
+  /* border-right: none; */
+  /* border-right: 1px solid red; */
+  border-style: none;
+}
+
+.Logout.open {
+  display: none;
+}
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Main-Icon 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.Navbar-Container .Main-Icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 3.8rem;
+  z-index: 1;
+}
+
+.Navbar-Container .Main-Icon a {
+  /* margin-right: 20px; */
+  /* margin-left: 10px; */
+  /* margin: auto 10px; */
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all .50s ease;
+  color: white;
+}
+
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Main-Icon 영역 - User
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+
+.myProfile {
+  padding: 0 25px;
+}
+
+#menu-icon {
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+
+
+/*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  반응형
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media (max-width: 1280px) {
+
+  /* .Navbar-Container {
+    width: 100vw;
+  } */
+  .Navbar-Container header .logo img {
+    width: 30px;
+  }
+
+  .Navbar-Container header h3 {
+    font-size: 0.6em;
+    letter-spacing: 0;
+  }
+
+  .Navbar-Container header {}
+
+  .Navbar-Container .Navbar li {
+    letter-spacing: 1px;
+  }
+
+  .Nav-Coin {
+    color: gold;
+    margin-right: 40px;
+  }
+
+  .HowManyCoin {
+    font-size: 17px;
+    color: gold;
+    position: relative;
+    right: 40px;
+    font-weight: 900;
+
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .Navbar-Container header .logo {
+    margin-left: .5rem;
+    margin-right: 1.5rem;
+  }
+
+  .Navbar-Container .Navbar {
+    margin-right: 1rem;
+  }
+
+  .Navbar-Container .Navbar li {
+    width: auto;
+    letter-spacing: 2px;
+    border: none;
+  }
+  .Navbar-Container .Main-Icon  {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5.5rem;
+    z-index: 1;
+  }
+}
+
+
+
+@media (max-width: 930px) {
+
+  .Navbar-Container header .logo {
+    margin-left: .5rem;
+    margin-right: 1.2rem;
+  }
+
+  .Navbar-Container .Navbar {
+    margin-right: 1rem;
+  }
+
+  .Navbar-Container .Navbar li {
+    width: auto;
+    letter-spacing: .4px;
+    border: none;
+  }
+}
+
+@media (max-width: 867px) {
+  .Navbar-Container header .logo {
+    margin-left: .5rem;
+    margin-right: 1.5rem;
+  }
+
+  .Navbar-Container .Navbar {
+    margin-right: .5rem;
+  }
+
+  .Navbar-Container .Navbar li {
+    width: auto;
+    letter-spacing: 2px;
+    border: none;
+  }
+}
+
+@media (max-width: 867px) {
+  #menu-icon {
+    display: block;
+  }
+
+  /* Navbar 영역 */
+  .Navbar-Container .Main-Icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2.0rem;
+    z-index: 1;
+  }
+
+  .Navbar-Container .Navbar {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+
+    right: -100%;
+    /* rigth : 2% ☞ -100% */
+    width: 200px;
+    /* height: 50vh; 전체 길이 */
+    background: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+  }
+
+  .Navbar-Container .Navbar li {
+    width: 150px;
+  }
+
+  .Menu-submenu li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    width: 150px;
+  }
+
+  .Menu-submenu li a {
+    display: block;
+    margin: .5rem 0;
+    transition: all .50s ease;
+    color: var(--tongue);
+  }
+
+  .Menu-submenu li:hover {
+    background: none;
+  }
+
+  .Navbar-Container .Navbar a:hover {
+    color: black;
+    transform: translateY(5px);
+  }
+
+  .Navbar-Container .Navbar a:active {
+    color: #fff;
+  }
+
+  .Navbar.open {
+    right: 1%;
+  }
+
+  /* Navbar 영역 - User */
+  .User {
+    display: block;
+    margin: 0;
+  }
+
+  #User-icon {
+    display: none;
+  }
+
+  .myProfile {
+    display: inline-block;
+    width: 150px;
+    line-height: 2.5rem;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    color: var(--tongue);
+  }
+
+  .User li {
+    width: 150px;
+    line-height: 2.5rem;
+    padding: 0.5rem 1rem;
+
+
+    transition: 0.5s;
+
+
+
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    transition: all .50s ease;
+
+  }
+
+  .User li a {
+    color: var(--tongue);
+  }
+
+  .User ul>li:hover {
+    color: black;
+    transform: translateY(5px);
+  }
+
+  .User a:hover {
+    color: black;
+    transform: translateY(5px);
+  }
+
+  .User-submenu-close {
+    display: block;
+  }
+
+  /* Navbar 영역 - Menu */
+  .Menu-submenu {
+    display: block;
+  }
+
+  .Logout.open {
+    display: block;
+  }
+}

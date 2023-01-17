@@ -1,0 +1,84 @@
+.AboutUs-Container {
+  width: 800px;
+  /* height: 700px; */
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  position: relative;
+  background: radial-gradient(circle, rgba(255,192,203,1) 0%, rgba(255,116,115,1) 70%, rgba(226,75,75,1) 100%);
+  box-shadow: 12px 12px 12px rgba(32,32,32,.5);
+}
+/* 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  header 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.AboutUs-header {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.AboutUs-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  main 영역
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.AboutUs-main {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+/* 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  main 영역 - OurInfo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.OurInfo {
+  margin: 20px;
+  /* background: pink; */
+  border-radius: 20px;
+  /* padding: 3rem 2rem 1rem; */
+  letter-spacing: 2px;
+}
+.OurInfo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .AboutUs-Container {
+    width: 105%;
+    height: 500px;
+
+    margin-left: -0.5rem;
+        padding: 0 20px;
+        flex-direction: column;
+  }
+  .AboutUs-header {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .AboutUs-main {
+    
+  }
+  .OurInfo{
+    width: 4rem;
+  }
+  .OurInfo > img {
+    width: 6rem;
+    height: 6rem;
+  }
+}

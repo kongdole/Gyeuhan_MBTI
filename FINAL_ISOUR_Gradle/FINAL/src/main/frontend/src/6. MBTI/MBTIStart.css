@@ -1,0 +1,411 @@
+
+
+/*^^^^^^^ 엠비티아이 검사 시작 페이지 ^^^^^^^^*/
+
+.MBTI-Startbtn {
+    background: #29335c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    font-family: 'MaplestoryOTFBold';
+
+    color: white;
+    padding: 0.3rem;
+    width: 300px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+    border: 0px none;
+    transition: all .2s ea se-in-out;
+    font-weight: 900;
+    position: relative;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+.MBTI-Startbtn:hover {
+    opacity: 0.95;
+    transition-duration: .5s;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 5);
+    ;
+}
+
+.MBTI-Startbtn:active {
+
+    transition-duration: .5s;
+    transform: translateY(5px);
+}
+
+.MBTI-Startbtn .arrow {
+    position: relative;
+    top: 8px;
+
+}
+
+.MBTI-Startbtn>p {
+
+    position: relative;
+    bottom: 5px;
+}
+
+.MBTI-StartContainer {
+    text-align: center;
+
+    margin: 0px auto 0px;
+    border: 0px;
+    position: relative;
+
+}
+
+.MBTI-StartContainer>.mbti-person1 {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+
+.MBTI-StartContainer>.mbti-person2 {
+    position: relative;
+    bottom: 5px;
+}
+
+.MBTI-StartContainer>.mbti-person3 {
+    position: relative;
+    bottom: 25px;
+}
+
+.MBTI-StartContainer>.mbti-quiz {
+    position: relative;
+    bottom: -10px;
+}
+
+.MBTI-StartContainer>.mbti-brain {
+    position: relative;
+    bottom: -10px;
+}
+
+
+.MBTI-Sentence2 {
+    margin-bottom: 40px;
+    font-size: 3.5em;
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+.MBTI-Sentence2 span:nth-of-type(1) {
+    color: rgba(149, 98, 123);
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+.MBTI-Sentence2 span:nth-of-type(2) {
+    color: rgba(153, 194, 108);
+    font-family: 'MaplestoryOTFBold';
+}
+
+.MBTI-Sentence2 span:nth-of-type(3) {
+    color: rgba(113, 202, 204);
+    font-family: 'MaplestoryOTFBold';
+}
+
+.MBTI-Sentence2 span:nth-of-type(4) {
+    color: rgba(228, 199, 40);
+    font-family: 'MaplestoryOTFBold';
+}
+
+
+.MBTI-Sentence2>span:nth-of-type(5) {
+    color: #0000FF;
+}
+
+.MBTI-Sentence2>div {
+    margin-bottom: 10px;
+}
+
+.MBTI-Sentence2>p {
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+.MBTI-Mbtiword {
+    font-size: 60px;
+    position: relative;
+    right: 50px;
+    top: 30px;
+
+}
+
+
+.MBTI-Mbtiword span:nth-of-type(1) {
+    color: red;
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+.MBTI-Mbtiword span:nth-of-type(2) {
+    color: orange;
+    font-family: 'MaplestoryOTFBold';
+}
+
+.MBTI-Mbtiword span:nth-of-type(3) {
+    color: yellowgreen;
+    font-family: 'MaplestoryOTFBold';
+}
+
+.MBTI-Mbtiword span:nth-of-type(4) {
+    font-family: 'MaplestoryOTFBold';
+    color: #CC33FF;
+}
+
+
+.MBTI-Container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@media screen and (max-width: 768px) {
+    .MBTI-Startbtn {
+        
+    }
+    
+    .MBTI-Startbtn:hover {
+       
+    }
+    
+    .MBTI-Startbtn:active {
+    }
+    
+    .MBTI-Startbtn>.arrow {
+        
+    
+    }
+    
+    .MBTI-Startbtn>p {
+    
+    }
+    
+    .MBTI-StartContainer {
+
+    }
+    
+    .MBTI-StartContainer>.mbti-person1 {
+
+    }
+    
+    .MBTI-StartContainer>.mbti-person2 {
+  
+    }
+    
+    .MBTI-StartContainer>.mbti-person3 {
+    
+    }
+    
+    .MBTI-StartContainer>.mbti-quiz {
+      
+    }
+    
+    .MBTI-StartContainer>.mbti-brain {
+  
+    }
+    
+    
+    .MBTI-Sentence2 {
+        font-size: 2.3em;
+    }
+    
+    .MBTI-Sentence2 span:nth-of-type(1) {
+   
+    
+    }
+    
+    .MBTI-Sentence2 span:nth-of-type(2) {
+
+    }
+    
+    .MBTI-Sentence2 span:nth-of-type(3) {
+   
+    }
+    
+    .MBTI-Sentence2 span:nth-of-type(4) {
+    
+    }
+    
+    
+    .MBTI-Sentence2>span:nth-of-type(5) {
+
+    }
+    
+    .MBTI-Sentence2>div {
+
+    }
+    
+    .MBTI-Sentence2>p {
+ 
+    
+    }
+    
+    .MBTI-Mbtiword {
+     
+    
+    }
+    
+    
+    .MBTI-Mbtiword span:nth-of-type(1) {
+    
+    }
+    
+    .MBTI-Mbtiword span:nth-of-type(2) {
+    
+    }
+    
+    .MBTI-Mbtiword span:nth-of-type(3) {
+  
+    }
+    
+    .MBTI-Mbtiword span:nth-of-type(4) {
+ 
+    }
+    
+    
+    .MBTI-Container {
+        width:100%;
+    
+    }
+}
+
+
+@media screen and (max-width: 457px) {
+    .MBTI-Startbtn {
+        position: inherit;
+        top:40px;
+    }
+    
+    .MBTI-Startbtn:hover {
+       
+    }
+    
+    .MBTI-Startbtn:active {
+    }
+    
+    .MBTI-Startbtn>.arrow {
+        
+    
+    }
+    
+    .MBTI-Startbtn>p {
+    
+    }
+    
+    .MBTI-StartContainer {
+
+    }
+    
+    .MBTI-StartContainer>.mbti-person1 {
+        position:relative;
+        top:10px;
+    }
+    
+    .MBTI-StartContainer>.mbti-person2 {
+        
+        position: inherit;
+        top:-10px;
+    }
+    
+    .MBTI-StartContainer>.mbti-person3 {
+        opacity:0;
+        position: absolute;
+        right:250px;
+        bottom: 50px;
+    }
+    
+    .MBTI-StartContainer>.mbti-quiz {
+      
+        position: inherit;
+        top:40px;
+    }
+    
+    .MBTI-StartContainer>.mbti-brain {
+  
+        position: inherit;
+        top:40px;
+    }
+    
+    
+    .MBTI-Sentence2 {
+        font-size: 1.8em;
+        position: inherit;
+        top:40px;
+    }
+    
+    .MBTI-Sentence2 span:nth-of-type(1) {
+   
+    
+    }
+    
+    .MBTI-Sentence2 span:nth-of-type(2) {
+
+    }
+    
+    .MBTI-Sentence2 span:nth-of-type(3) {
+   
+    }
+    
+    .MBTI-Sentence2 span:nth-of-type(4) {
+    
+    }
+    
+    
+    .MBTI-Sentence2>span:nth-of-type(5) {
+
+    }
+    
+    .MBTI-Sentence2>div {
+
+    }
+    
+    .MBTI-Sentence2>p {
+ 
+    
+    }
+    
+    .MBTI-Mbtiword {
+        position: inherit;
+        top:40px;
+    
+    }
+    
+    
+    .MBTI-Mbtiword span:nth-of-type(1) {
+        position: inherit;
+        top:30px;
+    }
+    
+    .MBTI-Mbtiword span:nth-of-type(2) {
+        position: inherit;
+        top:30px;
+    }
+    
+    .MBTI-Mbtiword span:nth-of-type(3) {
+        position: inherit;
+        top:30px;
+    }
+    
+    .MBTI-Mbtiword span:nth-of-type(4) {
+        position: inherit;
+        top:30px;
+    }
+    
+    
+    .MBTI-Container {
+        width:100%;
+    
+    }
+}
+
+
+
