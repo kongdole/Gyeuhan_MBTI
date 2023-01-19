@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.57bf9ae7.css",
-    "main.js": "/static/js/main.0bc137c0.js",
+    "main.css": "/static/css/main.37ca1574.css",
+    "main.js": "/static/js/main.fdf00252.js",
     "static/js/915.7fc99038.chunk.js": "/static/js/915.7fc99038.chunk.js",
     "static/media/아이셔용.png": "/static/media/아이셔용.dfe60f07928cc8aaf1e8.png",
     "static/media/조혜경.png": "/static/media/조혜경.9f23d178276aff9edf45.png",
@@ -26,12 +26,12 @@
     "static/media/중재자.png": "/static/media/중재자.1033e5b9eaa63f29165c.png",
     "static/media/논리술사.png": "/static/media/논리술사.646c930c8f67670c7d23.png",
     "index.html": "/index.html",
-    "main.57bf9ae7.css.map": "/static/css/main.57bf9ae7.css.map",
-    "main.0bc137c0.js.map": "/static/js/main.0bc137c0.js.map",
+    "main.37ca1574.css.map": "/static/css/main.37ca1574.css.map",
+    "main.fdf00252.js.map": "/static/js/main.fdf00252.js.map",
     "915.7fc99038.chunk.js.map": "/static/js/915.7fc99038.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57bf9ae7.css",
-    "static/js/main.0bc137c0.js"
+    "static/css/main.37ca1574.css",
+    "static/js/main.fdf00252.js"
   ]
 }

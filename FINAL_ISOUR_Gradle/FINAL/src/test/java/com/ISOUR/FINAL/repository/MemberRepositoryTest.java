@@ -21,19 +21,19 @@ class MemberRepositoryTest {
     @Test
     @DisplayName("회원가입 테스트")
     public void signUpTest() {
-        String[] ball = new String[] {"", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구", "십", "십일", "십이", "십삼", "십사", "십오", "십육"};
+        String[] ball = new String[] {"", "이승우", "조규성", "윤하", "김유정", "신세경", "이민호", "김민재", "황희찬", "박지성", "태연", "황인범", "이민정", "이천수", "서장훈", "김동률", "규현"};
         String[] MBTI = new String[] {"", "INTJ", "INTP", "ENTJ", "ENTP", "INFJ", "INFP", "ENFJ", "ENFP", "ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP"};
-        for(int i = 1; i <= 16; i++) {
+        for(int i = 17; i <= 32; i++) {
             MemberInfo memberInfo = new MemberInfo();
-            memberInfo.setName("미리" + ball[i]);
+            memberInfo.setName(ball[i-16]);
             memberInfo.setId("alfl" + i);
-            memberInfo.setPwd("dkfldkfl");
+            memberInfo.setPwd("!a1234567");
             memberInfo.setEmail("alfl" + i + "@alfl" + i +".com");
-            memberInfo.setNickname("닉미리" + ball[i]);
+            memberInfo.setNickname(ball[i-16]);
             memberInfo.setGender("남자");
             memberInfo.setBirth("1999-09-09");
-            memberInfo.setIntroduce("미리" + ball[i] + "의 자기소개");
-            memberInfo.setMbti(MBTI[i]);
+            memberInfo.setIntroduce( ball[i-16] + "의 자기소개");
+            memberInfo.setMbti(MBTI[i-16]);
             memberInfo.setRegistrationDate(LocalDateTime.now().withNano(0));
             memberRepository.save(memberInfo);
         }
