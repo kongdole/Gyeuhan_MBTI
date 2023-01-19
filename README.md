@@ -89,6 +89,54 @@ yarn add @mui/icons-material
 
 
 ## Developer Note
+
+
+23.1.17(화)
+😊전규한
+-기존 쓰던 AWS 아이디에서 과금나와서 불안해서 삭제하고 새로운 아이디 만듬.
+-AWS 서버 재 구축 및 DB 세팅
+-기존 회원 DB더미 파일 EXPORT 하고 IMPORT 했는데 AWS 디비에서 인식을 못함.
+
+23.1.5(목)
+😊전규한
+-카카오 로그인 Rest Api 값 내 것으로 변경 및 Redirect Url (gyehan.site) 로 변경
+-카카오 페이, 카카오 로그인 developer 아이디 관련 domain모두 gyeuhan.site:8282 로 변경
+-사이트 DB 관련해서 회원 가입 및 시연 환경 구성
+- 시작 main page 아래로 내려주세요 문구 추가.
+
+
+23.1.4(수)
+😊전규한
+-결제 완료 페이지 UI추가
+-Firebase 개인 아이디로 옮기고 환결설정 완료(Authentication, FireStore Database, Storage)
+-AWS 개인 서버 개설 및 가비아 도메인 신청(gyeuhan.site)
+
+
+23.1.3(화)
+😊전규한
+-matching 회원 조회 최대 page 를 이용한 코인 소모시스템 로직 완성
+-member DB에 개인회원 maxPage 데이터 추가
+-상점 페이지 UI 개선
+
+23.1.2(월)
+😊전규한
+-코인 소모 시스템 쪽지 부분 모달창 생성
+-코인 소모 시스템 채팅 부분 적용 및 모달창 생성
+
+22.12.31(토)
+😊전규한
+-코인 Nav bar에 UI 추가 및 클릭 시 SHOP 이동
+-코인 소모 시스템 쪽지 적용
+
+22.12.30(금)
+😊전규한
+-kakaoPay test 결제 관련 db 생성 및 코인 저장
+
+22.12.28(수)
+😊전규한
+-kakaoPay test 모듈 연결(front)(db연결 X)
+
+-------------------------------Final 프로젝트 마무리-----------------------------------------
 22.12.23(금)
 
 ♥ 조혜경
@@ -97,7 +145,6 @@ yarn add @mui/icons-material
 - 네비게이션 + 메인
 - 전체 쪽지함, 전체 회원 조회 가능은 함
 - 어드민 컨트롤러, 서비스 새로 생성
-
 
 22.12.22(목)
 
